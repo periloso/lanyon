@@ -1,0 +1,23 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Racconti brevi di Alessio Periloso
+tagline:             ''
+description:         ''
+url:                 http://periloso.github.io/lanyon
+baseurl:             ''
+paginate:            5
+default_locale:      'it_IT'
+
+# About/contact
+author:
+  name:              Alessio Periloso
+  url:               https://periloso.it
+#  email:             markdotto@gmail.com
+
+# Custom vars
+version:             1.0.0

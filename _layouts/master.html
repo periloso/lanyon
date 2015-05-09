@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Racconti brevi di Alessio Periloso</title>
+
+    <link rel="stylesheet" href="/lanyon/css/styles.css">
+    <link rel="stylesheet" href="/lanyon/css/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--[if !(lt IE 8)]><!-->
+       <script type="text/javascript">
+         (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+       </script>
+    <!--<![endif]-->
+    <div class="wrapper">
+      <header>
+        <h1><a href="/lanyon/">Racconti brevi di<br />Alessio Periloso</a></h1>
+        <h5 class="intro">Una collezione di racconti brevi, scritti da Alessio Periloso.</h5>
+        <sidebar>
+          <h3>Racconti disponibili</h3>
+          {% for post in site.posts %}
+            <h6><small><strong class="date" data-date='{{ post.date | date: "%Y-%m-%d" }}'></strong></small></h6>
+            <h5><a href="/lanyon/{{ post.url }}">{{ post.title }}</a></h5>
+          {% endfor %}
+        </sidebar>
+      </header>
+      <section> {{content}} </section>
+      <footer>
+        <p><small>
+          Hosted on GitHub Pages <br />
+          Theme inspiration: <a href="https://github.com/orderedlist">orderedlist</a>
+        </small></p>
+        <p><small>
+          Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0</a>.
+        </small></p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    var locale = window.navigator.userLanguage || window.navigator.language;
+    $('.date').each(function() {
+      moment.locale(locale);
+      var dt = moment($(this).data('date'), "YYYY-MM-DD");
+      $(this).text(dt.format('D MMMM YYYY'));
+    });
+  </script>
+</html>
