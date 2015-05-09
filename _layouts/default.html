@@ -22,13 +22,13 @@
     <!--<![endif]-->
     <div class="wrapper">
       <header>
-        <h1><a href="/lanyon/">Racconti brevi di<br />Alessio Periloso</a></h1>
+        <h1><a href="/novels/">Racconti brevi di<br />Alessio Periloso</a></h1>
         <h5 class="intro">Una collezione di racconti brevi, scritti da Alessio Periloso.</h5>
         <sidebar>
           <h3>Racconti disponibili</h3>
           {% for post in site.posts %}
             <h6><small><strong class="date" data-date='{{ post.date | date: "%Y-%m-%d" }}'></strong></small></h6>
-            <h5><a href="/lanyon/{{ post.url }}">{{ post.title }}</a></h5>
+            <h5><a href="/novels/{{ post.url }}">{{ post.title }}</a></h5>
           {% endfor %}
         </sidebar>
       </header>
