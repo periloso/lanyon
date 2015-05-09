@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Racconti brevi di Alessio Periloso
 tagline:             ''
 description:         ''
-url:                 http://periloso.github.io/lanyon
+url:                 http://periloso.github.io/novels
 baseurl:             ''
 paginate:            5
 default_locale:      'it_IT'
