@@ -28,7 +28,7 @@
           <h3>Racconti disponibili</h3>
           {% for post in site.posts %}
             <h6><small><strong class="date" data-date='{{ post.date | date: "%Y-%m-%d" }}'></strong></small></h6>
-            <h5><a href="/{{ post.url }}">{{ post.title }}</a></h5>
+            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
           {% endfor %}
         </sidebar>
       </header>
