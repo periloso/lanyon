@@ -305,7 +305,16 @@ footer {
     color:#444;
   }
 
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
   sidebar {
+    display: none;
     overflow: visible;
     max-height: none;
   }
