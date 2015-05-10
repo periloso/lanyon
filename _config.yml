@@ -12,7 +12,9 @@ url:                 http://periloso.github.io/novels
 baseurl:             ''
 paginate:            5
 default_locale:      'it_IT'
-markdown:            'gfm'
+markdown:            kramdown
+kramdown:
+  input:             GFM   # Enable GitHub Flavored Markdown (fenced code blocks)
 
 # About/contact
 author:
