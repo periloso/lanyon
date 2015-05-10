@@ -12,9 +12,11 @@ url:                 http://novels.periloso.it
 baseurl:             ''
 paginate:            5
 default_locale:      'it_IT'
+
 markdown:            kramdown
 kramdown:
-  input:             GFM   # Enable GitHub Flavored Markdown (fenced code blocks)
+  input:             GFM
+  hard_wrap:         true
 
 # About/contact
 author:
